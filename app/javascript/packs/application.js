@@ -17,8 +17,10 @@ import 'bootstrap';
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import { initUpdateNavbarOnScroll } from '../components/nav';
+import { loadDynamicBannerText } from '../components/banner';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   initUpdateNavbarOnScroll();
+  loadDynamicBannerText();
 });
